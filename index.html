@@ -10,14 +10,25 @@
 <style>
 body { margin:0; font-family:'Poppins',sans-serif; background:#fff8f0; }
 
-/* HERO */
-.hero {
-  background: url('https://source.unsplash.com/1600x600/?indian,spices') no-repeat center/cover;
+/* HEADER */
+.header {
+  background:#b22222;
   color:white;
   text-align:center;
-  padding:100px 20px;
+  padding:20px;
 }
-.hero h1 { font-size:50px; }
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('https://images.unsplash.com/photo-1604908176997-4316df75f1a4');
+  background-size:cover;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero h1 { font-size:40px; }
 
 /* PRODUCTS */
 section { padding:40px 20px; text-align:center; }
@@ -35,9 +46,7 @@ section { padding:40px 20px; text-align:center; }
   border-radius:15px;
   overflow:hidden;
   box-shadow:0 5px 20px rgba(0,0,0,0.1);
-  transition:0.3s;
 }
-.card:hover { transform:translateY(-10px); }
 
 .card img {
   width:100%;
@@ -45,21 +54,11 @@ section { padding:40px 20px; text-align:center; }
   object-fit:cover;
 }
 
-.price {
-  font-size:18px;
-}
+/* PRICE */
+.old { text-decoration:line-through; color:gray; }
+.offer { color:green; font-weight:bold; font-size:20px; }
 
-.old {
-  text-decoration: line-through;
-  color:gray;
-}
-
-.offer {
-  color:green;
-  font-weight:bold;
-  font-size:20px;
-}
-
+/* BUTTONS */
 .btn {
   display:block;
   margin:10px;
@@ -70,9 +69,7 @@ section { padding:40px 20px; text-align:center; }
   text-decoration:none;
 }
 
-.upi {
-  background:#ff9800;
-}
+.upi { background:#ff9800; }
 
 /* CONTACT */
 .contact {
@@ -91,9 +88,15 @@ footer {
 
 <body>
 
-<div class="hero">
+<!-- HEADER -->
+<div class="header">
   <h1>Ramana Pickels</h1>
-  <p>Fresh Homemade Pickles | Limited Time Offers 🔥</p>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Homemade Pickles</h1>
+  <p>Fresh | Spicy | Traditional Taste 🔥</p>
 </div>
 
 <section>
@@ -103,43 +106,28 @@ footer {
 
 <!-- Mango -->
 <div class="card">
-<img src="https://source.unsplash.com/400x300/?mango,pickle">
+<img src="https://images.unsplash.com/photo-1625944525533-473f1b6b6e7c">
 <h3>Mango Pickle (1kg)</h3>
-
-<p class="price">
-<span class="old">₹100</span> 
-<span class="offer">₹75</span>
-</p>
-
-<a class="btn" href="https://wa.me/91918888888?text=I want Mango Pickle 1kg">Order on WhatsApp</a>
+<p><span class="old">₹100</span> <span class="offer">₹75</span></p>
+<a class="btn" href="https://wa.me/91918888888?text=I want Mango Pickle">Order</a>
 <a class="btn upi" href="upi://pay?pa=yourupi@upi&pn=RamanaPickels&am=75">Pay via UPI</a>
 </div>
 
 <!-- Chicken -->
 <div class="card">
-<img src="https://source.unsplash.com/400x300/?chicken,spicy">
+<img src="https://images.unsplash.com/photo-1604908554165-6c63c4b63b9b">
 <h3>Chicken Pickle (1kg)</h3>
-
-<p class="price">
-<span class="old">₹500</span> 
-<span class="offer">₹350</span>
-</p>
-
-<a class="btn" href="https://wa.me/91918888888?text=I want Chicken Pickle 1kg">Order on WhatsApp</a>
+<p><span class="old">₹500</span> <span class="offer">₹350</span></p>
+<a class="btn" href="https://wa.me/91918888888?text=I want Chicken Pickle">Order</a>
 <a class="btn upi" href="upi://pay?pa=yourupi@upi&pn=RamanaPickels&am=350">Pay via UPI</a>
 </div>
 
 <!-- Prawn -->
 <div class="card">
-<img src="https://source.unsplash.com/400x300/?prawns,spicy">
+<img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36">
 <h3>Prawn Pickle (1kg)</h3>
-
-<p class="price">
-<span class="old">₹700</span> 
-<span class="offer">₹500</span>
-</p>
-
-<a class="btn" href="https://wa.me/91918888888?text=I want Prawn Pickle 1kg">Order on WhatsApp</a>
+<p><span class="old">₹700</span> <span class="offer">₹500</span></p>
+<a class="btn" href="https://wa.me/91918888888?text=I want Prawn Pickle">Order</a>
 <a class="btn upi" href="upi://pay?pa=yourupi@upi&pn=RamanaPickels&am=500">Pay via UPI</a>
 </div>
 
@@ -150,7 +138,6 @@ footer {
 <h2>Contact</h2>
 <p>📞 918888888</p>
 <p>📧 test1@gmail.com</p>
-<p>💬 <a href="https://wa.me/91918888888" style="color:yellow;">Chat on WhatsApp</a></p>
 </section>
 
 <footer>
